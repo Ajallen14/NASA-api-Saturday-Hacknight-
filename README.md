@@ -70,7 +70,7 @@ Theming:
 
 3. Create .env.local file:
 
-        NEXT_PUBLIC_NASA_API_KEY=your_nasa_api_key_here
+        NEXT_PUBLIC_NASA_API_KEY = your_nasa_api_key_here
 
 4. Get your API key from api.nasa.gov
 5. Replace your_nasa_api_key_here with your actual NASA API key

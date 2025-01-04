@@ -41,18 +41,10 @@ Handles communication with NASA's API
 Manages query parameters and error handling
 
 ## Libraries used
-Core:
+
 - Next.js - 13.5.1
 - React - 18.2.0
 - TypeScript - 5.2.2
-
-Data Fetching:
-- @tanstack/react-query - 5.28.4
-
-UI Components:
-- shadcn/ui (Various @radix-ui components)
-- lucide-react - 0.446.0
-- tailwindcss - 3.3.3
 
 Styling:
 - tailwind-merge - 2.5.2

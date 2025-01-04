@@ -1,8 +1,3 @@
-
-
-
-
-
 ![nasanotion](https://github.com/user-attachments/assets/f5e65cb8-48c0-4dc0-b757-bf3569f32d2f)
 
 # MARS ROVER IMAGES
@@ -22,21 +17,21 @@ It provides :
 
 The application fetches and displays Mars Rover photos from NASA's API with these key components:
 
-### Home Page (app/page.tsx)
+### [Home Page](https://github.com/Ajallen14/NASA-api-Saturday-Hacknight-/blob/main/app/page.tsx)
 Manages the main state and data fetching
 Uses infinite scroll for pagination
 Handles loading and error states
 
-### Photo Display (components/PhotoGrid.tsx)
+### [Photo Display](https://github.com/Ajallen14/NASA-api-Saturday-Hacknight-/blob/main/components/PhotoGrid.tsx)
 Renders photos in a responsive grid
 Shows photo details on hover
 Opens detailed view in modal
 
-### Filtering (components/Filters.tsx)
+### [Filtering](https://github.com/Ajallen14/NASA-api-Saturday-Hacknight-/blob/main/components/Filters.tsx)
 Allows selection of rover, sol (Martian day), and camera
 Updates the main query when filters change
 
-### API Integration (lib/api.ts)
+### [API Integration](https://github.com/Ajallen14/NASA-api-Saturday-Hacknight-/blob/main/lib/api.ts)
 Handles communication with NASA's API
 Manages query parameters and error handling
 

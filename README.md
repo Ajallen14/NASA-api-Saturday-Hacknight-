@@ -46,13 +46,6 @@ Manages query parameters and error handling
 - React - 18.2.0
 - TypeScript - 5.2.2
 
-Styling:
-- tailwind-merge - 2.5.2
-- tailwindcss-animate - 1.0.7
-
-Theming:
-- next-themes - 0.3.0
-
 
 ## How to configure
 1. Clone the project

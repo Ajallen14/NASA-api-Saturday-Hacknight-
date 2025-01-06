@@ -65,3 +65,6 @@ Production:
         npm run build
         npm start
 The application will be available at http://localhost:3000
+
+## Deploy
+[LINK](https://nasa-api-saturday-hacknight-pm76.vercel.app/)

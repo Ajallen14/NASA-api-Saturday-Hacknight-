@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
@@ -9,21 +9,21 @@ import { RoverName, CameraType } from '@/lib/types';
 interface FiltersProps {
   onFilterChange: (filters: {
     rover: RoverName;
-    sol?: number;
+    sol: number;
     camera?: CameraType;
   }) => void;
 }
 
 export default function Filters({ onFilterChange }: FiltersProps) {
   const [rover, setRover] = useState<RoverName>('Curiosity');
-  const [sol, setSol] = useState<string>('');
+  const [sol, setSol] = useState<string>('1000'); // Set default value
   const [camera, setCamera] = useState<CameraType | ''>('');
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     onFilterChange({
       rover,
-      ...(sol && { sol: parseInt(sol) }),
+      sol: parseInt(sol) || 1000, // Ensure we always have a valid number
       ...(camera && { camera }),
     });
   };
